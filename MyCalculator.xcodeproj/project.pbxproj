@@ -15,6 +15,7 @@
 		26468D461DA0E84A00974A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26468D441DA0E84A00974A0B /* LaunchScreen.storyboard */; };
 		26468D511DA0E84A00974A0B /* MyCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26468D501DA0E84A00974A0B /* MyCalculatorTests.m */; };
 		26468D5C1DA0E84A00974A0B /* MyCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26468D5B1DA0E84A00974A0B /* MyCalculatorUITests.m */; };
+		26468D6F1DA0F7F400974A0B /* cal_back_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 26468D6E1DA0F7F400974A0B /* cal_back_splash.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		26468D571DA0E84A00974A0B /* MyCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26468D5B1DA0E84A00974A0B /* MyCalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCalculatorUITests.m; sourceTree = "<group>"; };
 		26468D5D1DA0E84A00974A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26468D6E1DA0F7F400974A0B /* cal_back_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cal_back_splash.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +103,12 @@
 		26468D351DA0E84A00974A0B /* MyCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				26468D391DA0E84A00974A0B /* AppDelegate.h */,
-				26468D3A1DA0E84A00974A0B /* AppDelegate.m */,
-				26468D3C1DA0E84A00974A0B /* ViewController.h */,
-				26468D3D1DA0E84A00974A0B /* ViewController.m */,
-				26468D3F1DA0E84A00974A0B /* Main.storyboard */,
+				26468D6D1DA0EF8700974A0B /* viewControllers */,
+				26468D6C1DA0EF7E00974A0B /* sounds */,
+				26468D6B1DA0EF7500974A0B /* images */,
+				26468D6A1DA0EF6800974A0B /* specialClasses */,
+				26468D691DA0EF5300974A0B /* storyboards */,
 				26468D421DA0E84A00974A0B /* Assets.xcassets */,
-				26468D441DA0E84A00974A0B /* LaunchScreen.storyboard */,
 				26468D471DA0E84A00974A0B /* Info.plist */,
 				26468D361DA0E84A00974A0B /* Supporting Files */,
 			);
@@ -138,6 +139,48 @@
 				26468D5D1DA0E84A00974A0B /* Info.plist */,
 			);
 			path = MyCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		26468D691DA0EF5300974A0B /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				26468D3F1DA0E84A00974A0B /* Main.storyboard */,
+				26468D441DA0E84A00974A0B /* LaunchScreen.storyboard */,
+			);
+			name = storyboards;
+			sourceTree = "<group>";
+		};
+		26468D6A1DA0EF6800974A0B /* specialClasses */ = {
+			isa = PBXGroup;
+			children = (
+				26468D391DA0E84A00974A0B /* AppDelegate.h */,
+				26468D3A1DA0E84A00974A0B /* AppDelegate.m */,
+			);
+			name = specialClasses;
+			sourceTree = "<group>";
+		};
+		26468D6B1DA0EF7500974A0B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				26468D6E1DA0F7F400974A0B /* cal_back_splash.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		26468D6C1DA0EF7E00974A0B /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		26468D6D1DA0EF8700974A0B /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26468D3C1DA0E84A00974A0B /* ViewController.h */,
+				26468D3D1DA0E84A00974A0B /* ViewController.m */,
+			);
+			name = viewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26468D6F1DA0F7F400974A0B /* cal_back_splash.png in Resources */,
 				26468D461DA0E84A00974A0B /* LaunchScreen.storyboard in Resources */,
 				26468D431DA0E84A00974A0B /* Assets.xcassets in Resources */,
 				26468D411DA0E84A00974A0B /* Main.storyboard in Resources */,
@@ -422,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.earashel.MyCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.earashel.MyCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
